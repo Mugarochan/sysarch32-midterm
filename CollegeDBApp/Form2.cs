@@ -7,6 +7,7 @@ namespace CollegeDBApp
 {
     public partial class Form2 : Form
     {
+        // Database connection string
         string connectionString = "Server=localhost;Database=CollegeDB;User ID=root;Password=root;";
         MySqlConnection connection;
 
@@ -25,12 +26,14 @@ namespace CollegeDBApp
 
         }
 
+        // Opens the MySQL database connection if it is currently closed.
         private void OpenConnection()
         {
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
         }
 
+        // Closes the MySQL database connection if it is currently open.
         private void CloseConnection()
         {
             if (connection.State == ConnectionState.Open)
