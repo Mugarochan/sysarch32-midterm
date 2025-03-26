@@ -3,10 +3,20 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+<<<<<<< HEAD
+=======
+
+//Jomar S. Diaz 
+
+>>>>>>> feature-crud-operations
 namespace CollegeDBApp
 {
     public partial class Form1 : Form
     {
+<<<<<<< HEAD
+=======
+        // Database connection string
+>>>>>>> feature-crud-operations
         string connectionString = "Server=localhost;Database=CollegeDB;User ID=root;Password=root;";
         MySqlConnection connection;
 
@@ -18,10 +28,17 @@ namespace CollegeDBApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             LoadColleges();
         }
 
         // Open DB Connection
+=======
+            LoadColleges(); // Load colleges when form loads
+        }
+
+        // Open Database Connection
+>>>>>>> feature-crud-operations
         private void OpenConnection()
         {
             if (connection.State == ConnectionState.Closed)
@@ -202,7 +219,11 @@ namespace CollegeDBApp
         {
 
         }
+<<<<<<< HEAD
 
+=======
+        // Handle DataGridView selection and populate form fields
+>>>>>>> feature-crud-operations
         private void dgvColleges_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvColleges.SelectedRows.Count > 0)
@@ -234,7 +255,11 @@ namespace CollegeDBApp
         {
             LoadColleges();
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> feature-crud-operations
         private void btnOpenForm2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();

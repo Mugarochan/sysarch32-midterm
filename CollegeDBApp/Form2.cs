@@ -7,6 +7,10 @@ namespace CollegeDBApp
 {
     public partial class Form2 : Form
     {
+<<<<<<< HEAD
+=======
+        // Database connection string
+>>>>>>> feature-crud-operations
         string connectionString = "Server=localhost;Database=CollegeDB;User ID=root;Password=root;";
         MySqlConnection connection;
 
@@ -25,12 +29,20 @@ namespace CollegeDBApp
 
         }
 
+<<<<<<< HEAD
+=======
+        // Opens the MySQL database connection if it is currently closed.
+>>>>>>> feature-crud-operations
         private void OpenConnection()
         {
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
         }
 
+<<<<<<< HEAD
+=======
+        // Closes the MySQL database connection if it is currently open.
+>>>>>>> feature-crud-operations
         private void CloseConnection()
         {
             if (connection.State == ConnectionState.Open)
