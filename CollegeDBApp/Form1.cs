@@ -3,6 +3,9 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+
+//Jomar S. Diaz 
+
 namespace CollegeDBApp
 {
     public partial class Form1 : Form
@@ -22,7 +25,7 @@ namespace CollegeDBApp
             LoadColleges(); // Load colleges when form loads
         }
 
-        // Open DB Connection
+        // Open Database Connection
         private void OpenConnection()
         {
             if (connection.State == ConnectionState.Closed)
