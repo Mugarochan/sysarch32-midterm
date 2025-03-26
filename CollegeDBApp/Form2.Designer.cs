@@ -191,7 +191,7 @@ namespace CollegeDBApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PeachPuff;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(637, 693);
             this.Controls.Add(this.txtDepartmentID);
             this.Controls.Add(this.label4);
